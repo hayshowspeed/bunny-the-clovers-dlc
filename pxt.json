@@ -1,5 +1,5 @@
 {
-    "name": "bunny the-clovers dlc",
+    "name": "bunny the-clovers 2",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -19,7 +19,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.12.21",
+        "target": "1.12.30",
         "targetId": "arcade"
     },
     "supportedTargets": [
