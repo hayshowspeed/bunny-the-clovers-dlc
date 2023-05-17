@@ -2,7 +2,11 @@
     "name": "bunny the-clovers 2",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "multiplayer": "*",
+        "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3",
+        "sprite-scaling": "*",
+        "corgio": "*"
     },
     "files": [
         "main.blocks",
