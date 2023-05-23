@@ -19,6 +19,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "menu"
     },
+    "image4": {
+        "data": "hwQkABAAAAAAAAAAAAAAAAAAAADw/wAAAAAAAL/7DwAAAADwy7sPAAAAAPC7u8EAAAAAv7sbwQAAAAC/uxvBAAAA8Lu7G8EAAADwu7sbwQwAAPC7u2aWDAAA8Lu7ZlkMAADwu7tmlgwAAPC7u7sRDAAAwMu8uxsMAADcu8vMuw8AwN3Lu7vb+wDAvbvMu7v9APC7u7u7vPsA8Lu7u7u8+wDw+7u7y/z7APAPvLvM3P8AAADPzMzcDAAAAM/MzLwMAAAAz8zMywAAAADwzMzLAAAAAPDMzMsAAAAAAM+8DAAAAAAAz8wMAAAAAADP/AAAAAAAALz8AAAAAADA3bsPAAAAANy9y/sAAAAAvLvM+wAAAAC8+/+8DwAAALwMCr8PAAAAzKCg8A8=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "evil"
+    },
     "anim1": {
         "namespace": "myAnimations",
         "id": "anim1",

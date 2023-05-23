@@ -92,6 +92,9 @@ sprites.onOverlap(SpriteKind.menu, SpriteKind.Projectile, function (sprite, othe
     music.baDing.play()
     info.changeScoreBy(1)
 })
+controller.player2.onEvent(ControllerEvent.Connected, function () {
+	
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy(effects.disintegrate, 100)
     carer.setKind(SpriteKind.Projectile)
@@ -108,6 +111,41 @@ let bow: Sprite = null
 let carer: Sprite = null
 let god: Sprite = null
 let list: number[] = []
+game.setDialogFrame(img`
+    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 . . . . . . . . . . . . . 3 
+    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+    `)
+game.setDialogCursor(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . 3 3 3 3 3 3 3 . . . . . 
+    . . . . 3 3 3 3 3 3 3 3 . . . . 
+    . . . . . 3 3 3 3 3 3 3 3 3 . . 
+    . . . . . 3 3 3 3 3 3 3 3 3 . . 
+    . . . . . 3 3 3 3 3 3 3 3 3 . . 
+    . . . . . 3 3 3 3 3 3 3 . . . . 
+    . . . . . 3 . . . . . . . . . . 
+    . . . . . 3 3 3 3 3 3 . . . . . 
+    . . . . . 3 3 3 3 3 . . . . . . 
+    . . . . . 3 3 3 3 3 3 . . . . . 
+    . . . . . . . 3 3 3 3 . . . . . 
+    `)
 list.push(-39 % 1)
 list = [0, 1]
 let text_list = ["a", "b", "c"]
@@ -308,24 +346,7 @@ game.onUpdateInterval(4000, function () {
     logo.setKind(SpriteKind.Projectile)
 })
 game.onUpdateInterval(6000, function () {
-    food2 = sprites.createProjectileFromSide(img`
-        ....................................
-        ....................................
-        ....................................
-        ...............ccffff...............
-        ..............cddbbbf...............
-        .......ffffffcddbbbf................
-        .....ffbbbbbbbbbbbbbcfff.......ccccc
-        ...ffbbbbbbbbcbcbbbbbcccff....cdbbbc
-        ..fbbbbbbbbbbcbbcbbbbcccccfffcddbbc.
-        .fbcbbbbbbbbbbcbcbbbbccccccccbdbbf..
-        .fbbbbbbb888bbcbbbbbccccccccccbbcf..
-        .ffbb1111888bbcbbbbcccccccbcffbccf..
-        ..ff111118a81bbbbccccccbbbcc..fbbcf.
-        ....ccccc88811bdbbbfddbccc.....ffbbf
-        ........ccccccfbdbbbfcc..........fff
-        ...............ffffff...............
-        `, randint(-30, 50), randint(-30, 50))
+    food2 = sprites.createProjectileFromSide(assets.image`evil`, randint(-30, 50), randint(-30, 50))
     food2.setKind(SpriteKind.Enemy)
     info.changeLifeBy(-2)
 })

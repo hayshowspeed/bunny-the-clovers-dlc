@@ -202,6 +202,25 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 `;
+            case "image4":
+            case "evil":return img`
+....................................
+....................................
+....................................
+...............ccffff...............
+..............cddbbbf...............
+.......ffffffcddbbbf................
+.....ffbbbbbbbbbbbbbcfff.......ccccc
+...ffbbbbbbbbcbcbbbbbcccff....cdbbbc
+..fbbbbbbbbbbcbbcbbbbcccccfffcddbbc.
+.fbcbbbbbbbbbbcbcbbbbccccccccbdbbf.a
+.fbbbbbbb666bbcbbbbbccccccccccbbcfa.
+.ffbb1111666bbcbbbbcccccccbcffbccf.a
+..ff111116961bbbbccccccbbbcc..fbbcf.
+....ccccc95911bdbbbfddbccc.....ffbbf
+........ccccccfbdbbbfcc..........fff
+...............ffffff...............
+`;
         }
         return null;
     })
